@@ -22,6 +22,14 @@ ul {
    justify-content: space-between;
    align-items: center;
 }
+h1, h2, h3 {
+   color: var(--primary);
+}
+
+h1 {
+   font-size: 48px;
+   font-weight: 700;
+}
 
 a {
    text-decoration: none;
@@ -218,6 +226,39 @@ footer .container {
    transition: 0.5s;
 }
 
+.detail-menu {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+}
+
+.description-detail {
+   padding: 45px 120px;
+}
+
+.description-detail .divider {
+   width: 380px;
+   height: 5px;
+   background-color: var(--accent);
+   margin: 20px 0px;
+}
+
+.button {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   width: fit-content;
+   background-color: var(--button);
+   border-radius: 55px;
+   margin: 45px 0px;
+   padding: 20px 40px;
+   color: var(--font-light);
+}
+
+.button:hover {
+   background-color: var(--accent);
+   transition: 0.5s;
+}
 
 /* Responsive Smartphone */
 @media only screen and (max-width: 600px) {}
