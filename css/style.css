@@ -22,7 +22,10 @@ ul {
    justify-content: space-between;
    align-items: center;
 }
-h1, h2, h3 {
+
+h1,
+h2,
+h3 {
    color: var(--primary);
 }
 
@@ -183,7 +186,7 @@ header {
    border-radius: 20px;
 }
 
-.findus-wrapper{
+.findus-wrapper {
    display: flex;
    flex-direction: row;
    justify-content: space-between;
@@ -259,6 +262,73 @@ footer .container {
    background-color: var(--accent);
    transition: 0.5s;
 }
+
+.help-wrapper {
+   display: flex;
+   flex-direction: column;
+   padding: 0px 260px 0px 260px;
+}
+
+form {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   margin: 0 auto;
+   border: 2px solid #D2D2D2;
+   border-radius: 20px;
+   padding: 50px 100px;
+}
+
+.input-group {
+   display: flex;
+   flex-direction: row;
+   align-items: flex-start;
+}
+
+.input-group input,
+.input-group textarea {
+   display: flex;
+   width: 60%;
+   height: 71px;
+   border: 1px solid #ddd;
+   border-radius: 20px;
+   font-size: 16px;
+   padding: 20px 50px;
+   margin-bottom: 20px;
+   font-size: 24px;
+   font-weight: 400;
+}
+
+.input-group textarea {
+   height: 100px;
+   resize: vertical;
+}
+
+.input-group label {
+   display: block;
+   font-weight: bold;
+   margin-bottom: 5px;
+   width: 40%;
+   font-size: 30px;
+   font-weight: 700;
+}
+
+.button-container {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+}
+
+.button-container button {
+   border: none; 
+   width: 30%;
+   height: 71px;
+   padding: 20px 70px;
+   font-size: 24px;
+   font-weight: 700;
+   justify-content: center;
+}
+
 
 /* Responsive Smartphone */
 @media only screen and (max-width: 600px) {}
