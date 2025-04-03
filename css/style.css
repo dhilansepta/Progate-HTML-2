@@ -6,6 +6,7 @@
    --background: #FFF;
    --font-light: #F9FBFE;
    --font-dark: #143642;
+   --transparent-secondary: rgba(20, 54, 66, 0.7);
 }
 
 * {
@@ -15,6 +16,91 @@
    font-family: 'Lato', sans-serif;
 }
 
+/* Home Pages */
+.home-header {
+   position: relative;
+   width: 100%;
+   height: 100vh;
+   background: url('../assets/Coffe Header.png') no-repeat center center/cover;
+   background-color: grey;
+   display: flex;
+   flex-direction: column;
+   color: var(--font-light);
+   border-radius: 0px 0px 30px 30px;
+}
+
+.home-header::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: var(--transparent-secondary);
+   border-radius: 0px 0px 30px 30px;
+}
+
+.header-container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   padding: 180px 380px 0px 380px;
+}
+
+.headerHome {
+   font-size: 70px;
+   font-weight: 800;
+   color: var(--font-light);
+   letter-spacing: 1px;
+}
+
+.header2Home {
+   font-size: 36px;
+   font-weight: 400;
+   color: var(--font-light);
+}
+
+.home-wrapper {
+   display: flex;
+   flex-direction: row;
+   padding: 50px 180px;
+   justify-content: center;
+   align-items: center;
+   gap: 70px;
+}
+
+.home-wrapper p{
+   font-size: 24px;
+   font-weight: 400;
+}
+
+.home-img {
+   width: auto;
+   height: auto;
+   background-size: cover;
+   background-position: center;
+}
+
+.home-img img {
+   object-fit: cover;
+   border-radius: 30px;
+}
+
+.feed-row {
+   margin-top: 50px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+
+.feed-row img{
+   width: 237px;
+   height: 237px;
+}
+
+/* Other Pages */
 ul {
    list-style-type: none;
    display: flex;
@@ -45,6 +131,10 @@ a {
 
 .main {
    padding-top: 245px;
+}
+
+.home-main {
+   padding-top:50px;
 }
 
 .pageTitle {
@@ -239,10 +329,9 @@ footer .container {
    padding: 45px 120px;
 }
 
-.description-detail .divider {
-   width: 380px;
-   height: 5px;
-   background-color: var(--accent);
+.divider {
+   width: max-content;
+   border-bottom: 5px solid var(--accent);
    margin: 20px 0px;
 }
 
@@ -320,7 +409,7 @@ form {
 }
 
 .button-container button {
-   border: none; 
+   border: none;
    width: 30%;
    height: 71px;
    padding: 20px 70px;
