@@ -19,7 +19,6 @@
 /* Home Pages */
 .home-header {
    position: relative;
-   width: 100%;
    height: 100vh;
    background: url('../assets/Coffe Header.png') no-repeat center center/cover;
    display: flex;
@@ -70,6 +69,15 @@
    column-gap: 70px;
 }
 
+.home-wrapperReverse {
+   display: flex;
+   flex-direction: row-reverse;
+   padding: 50px 180px;
+   justify-content: center;
+   align-items: center;
+   column-gap: 70px;
+}
+
 .home-wrapper p {
    font-size: 24px;
    font-weight: 400;
@@ -85,6 +93,21 @@
 .home-img img {
    object-fit: cover;
    border-radius: 30px;
+}
+
+#feed1 {
+   width: 335px; 
+   height: 460px;
+}
+
+#feed2 {
+   width: 335px; 
+   height: 335px;
+}
+
+#feed3 {
+   width: 453px; 
+   height: 453px;
 }
 
 .feed-row {
@@ -279,7 +302,7 @@ header {
 .findus-wrapper {
    display: flex;
    flex-direction: row;
-   
+
    align-items: center;
    width: 100%;
 }
@@ -593,8 +616,10 @@ form {
    }
 
    .button {
-      font-size: 4vh;
-      width: 100%;
+      font-size: 1.6vh;
+      width: fit-content;
+      padding: 10px 20px;
+      margin:  28px 0px 0px 0px;
    }
 
    .button img {
@@ -616,7 +641,7 @@ form {
    .findus-wrapper img {
       width: 44vh;
       height: auto;
-      padding-top: 0px !important; 
+      padding-top: 0px !important;
    }
 
    .detail-findus {
@@ -653,7 +678,8 @@ form {
       font-size: 3vh;
    }
 
-   .input-group input, .input-group textarea {
+   .input-group input,
+   .input-group textarea {
       font-size: 3vh;
       width: 100%;
       height: auto;
@@ -662,6 +688,69 @@ form {
    }
 
    .button-container button {
-      margin: 20px; 
+      margin: 20px;
+   }
+
+   .home-header {
+      height: 70vh;
+   }
+
+   .header-container {
+      padding: 80px 0px;
+   }
+
+   .headerHome {
+      font-size: 5.6vh;
+   }
+
+   .header2Home {
+      font-size: 3vh;
+   }
+
+   .home-wrapper,
+   .home-wrapperReverse {
+      flex-direction: column;
+      padding: 20px 0px;
+   }
+
+   .home-img img {
+      border-radius: 10px;
+   }
+
+   #feed1 {
+      width: 155px;
+      height: 212px;
+   }
+   #feed2 {
+      width: 155px;
+      height: 155px;
+   }
+
+   #feed3 {
+      width: 155px;
+      height: 155px;
+   }
+
+   .home-wrapper p {
+      font-size: 3vh;
+   }
+   .feed-row {
+      margin-top: 20px;
+   }
+   .feed-row img{
+      width: 30%;
+      height: 30%;
+   }
+
+   .feedTitle {
+      font-size: 3.5vh;
+      text-align: center;
+   }
+   .feedTitle::after {
+      content: " @aroma_bumi!";
+      color: var(--accent);
+      text-decoration: underline;
+      display: block;
+      font-size: 3.5vh;
    }
 }

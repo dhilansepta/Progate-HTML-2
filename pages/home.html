@@ -28,7 +28,7 @@
         <div class="container" style="z-index: 1;">
             <div class="header-container">
                 <h1 class="headerHome">Freshly Brewed
-                    Coffe & Tea</h1>
+                    Coffee & Tea</h1>
                 <h2 class="header2Home">Best qualities from our local soil</h2>
             </div>
         </div>
@@ -38,7 +38,7 @@
         <div class="container">
             <div class="home-wrapper">
                 <div class="home-img">
-                    <img src="../assets/Who are we.jpg" style="width: 335px; height: 460px;">
+                    <img src="../assets/Who are we.jpg" id="feed1">
                 </div>
                 <div class="home-desc">
                     <div class="divider">
@@ -51,7 +51,10 @@
                 </div>
             </div>
 
-            <div class="home-wrapper">
+            <div class="home-wrapperReverse">
+                <div class="home-img">
+                    <img src="../assets/Our products.jpg" id="feed2">
+                </div>
                 <div class="home-desc">
                     <div class="divider">
                         <h1>Product Showcase</h1>
@@ -60,44 +63,38 @@
                         ingredients processed with care.</p>
                     <a class="button" href="#">See our coffee and tea</a>
                 </div>
-                <div class="home-img">
-                    <img src="../assets/Our products.jpg" style="width: 335px; height: 335px;">
-                </div>
             </div>
 
             <div class="home-wrapper">
                 <div class="home-img">
-                    <img src="../assets/Hang out with us.jpg" style="width: 453px; height: 453px;">
+                    <img src="../assets/Hang out with us.jpg" id="feed3">
                 </div>
                 <div class="home-desc">
                     <div class="divider">
                         <h1>Hang out with us!</h1>
                     </div>
-                    <p>Our stores use sustainable  furnitures,
+                    <p>Our stores use sustainable furnitures,
                         surrounded by nature, to help our
                         planet survive.</p>
                     <a class="button" href="#">Find our cafes</a>
                 </div>
             </div>
 
-            <div class="home-wrapper">
-                <h1>Find us out at Instagram 
-                    <a href="https://www.instagram.com/dhilansepta/"
-                    style="color: var(--accent); text-decoration: underline;">@aroma_bumi!</a>
-                    <div class="feed-wrapper">
-                        <div class="feed-row">
-                            <img src="../assets/Feed 1.png">
-                            <img src="../assets/Feed 2.png">
-                            <img src="../assets/Feed 3.png">
-                        </div>
-
-                        <div class="feed-row">
-                            <img src="../assets/Feed 4.png">
-                            <img src="../assets/Feed 5.png">
-                            <img src="../assets/Feed 6.png">
-                        </div>
+            <div class="home-wrapper" style="flex-direction: column;">
+                <h1 class="feedTitle">Find us out at Instagram</h1>
+                <div class="feed-wrapper">
+                    <div class="feed-row">
+                        <img src="../assets/Feed 1.png">
+                        <img src="../assets/Feed 2.png">
+                        <img src="../assets/Feed 3.png">
                     </div>
-                </h1>
+
+                    <div class="feed-row">
+                        <img src="../assets/Feed 4.png">
+                        <img src="../assets/Feed 5.png">
+                        <img src="../assets/Feed 6.png">
+                    </div>
+                </div>
             </div>
 
             <div class="home-wrapper" style="flex-direction: column;">
@@ -115,7 +112,7 @@
         <div class="container">
             <div class="logo-container">
                 <a class="logo" href="../pages/home.html"></a>
-                <div style="gap: 27px; padding-top: 31px;">
+                <div class="icon">
                     <img style="filter:invert(1)" src="../assets/MAIL ICON.svg">
                     <img style="filter:invert(1)" src="../assets/PHONE ICON.svg">
                 </div>
@@ -123,19 +120,19 @@
 
             <div class="links-container">
                 <a class="link" style="color:var(--accent)" href="../pages/home.html">Products</a>
-                <a class="link" href="../pages/home.html">Coffee Based</a>
-                <a class="link" href="../pages/home.html">Non-Coffee</a>
-                <a class="link" href="../pages/home.html">Tea Based</a>
+                <a class="link" id="link-item" href="../pages/home.html">Coffee Based</a>
+                <a class="link" id="link-item" href="../pages/home.html">Non-Coffee</a>
+                <a class="link" id="link-item" href="../pages/home.html">Tea Based</a>
             </div>
 
             <div class="links-container">
                 <a class="link" style="color:var(--accent)" href="../pages/home.html">Store</a>
-                <a class="link" href="../pages/home.html">Location</a>
+                <a class="link" id="link-item" href="../pages/home.html">Location</a>
             </div>
 
             <div class="links-container">
                 <a class="link" style="color:var(--accent)" href="../pages/home.html">Contact</a>
-                <a class="link" href="../pages/home.html">Customer Service</a>
+                <a class="link" id="link-item" href="../pages/home.html">Customer Service</a>
             </div>
         </div>
     </footer>
