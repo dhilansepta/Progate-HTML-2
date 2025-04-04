@@ -112,6 +112,7 @@
 
 .feed-row {
    margin-top: 50px;
+   gap: 120px;
    display: flex;
    flex-direction: row;
    justify-content: space-between;
@@ -120,6 +121,18 @@
 .feed-row img {
    width: 237px;
    height: 237px;
+}
+
+.feedTitle {
+   width: max-content;
+   font-size: 48px;
+   font-weight: 800;
+}
+
+.feedTitle::after {
+   content: " @aroma_bumi!";
+   color: var(--accent);
+   text-decoration: underline;
 }
 
 /* Other Pages */
@@ -735,6 +748,7 @@ form {
       font-size: 3vh;
    }
    .feed-row {
+      gap: 0px;
       margin-top: 20px;
    }
    .feed-row img{
