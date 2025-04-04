@@ -78,6 +78,26 @@
    column-gap: 70px;
 }
 
+.home-wrapper,
+.home-wrapperReverse {
+   opacity: 0;
+   transition: all 0.8s ease-out;
+}
+
+.home-wrapper {
+   transform: translateX(50px);
+}
+
+.home-wrapperReverse {
+   transform: translateX(-50px);
+}
+
+.home-wrapper.animate,
+.home-wrapperReverse.animate {
+   opacity: 1;
+   transform: translateX(0);
+}
+
 .home-wrapper p {
    font-size: 24px;
    font-weight: 400;
@@ -96,17 +116,17 @@
 }
 
 #feed1 {
-   width: 335px; 
+   width: 335px;
    height: 460px;
 }
 
 #feed2 {
-   width: 335px; 
+   width: 335px;
    height: 335px;
 }
 
 #feed3 {
-   width: 453px; 
+   width: 453px;
    height: 453px;
 }
 
@@ -227,6 +247,34 @@ header {
    row-gap: 40px;
    margin: 0 auto;
 }
+
+.card-container a{
+   transition: all 0.4s ease-in-out;
+   transform: scale(1) translateY(0);
+
+   .card .menu-price, .card .menu-title {
+      transition: all 0.4s ease-in-out;
+      transform: scale(1) translateY(0);
+   }
+
+   .card img {
+      transition: all 0.4s ease-in-out;
+      transform: scale(1) translateY(0);
+   }
+}
+
+.card-container a:hover {
+   transform: scale(1.1);
+
+   .card .menu-price, .card .menu-title {
+      transform: translateY(140px);
+   }
+   .card img {
+      transform: scale(1.2) translateY(-50px);
+   }
+}
+
+
 
 .card-container p {
    padding: 0;
@@ -632,7 +680,7 @@ form {
       font-size: 1.6vh;
       width: fit-content;
       padding: 10px 20px;
-      margin:  28px 0px 0px 0px;
+      margin: 28px 0px 0px 0px;
    }
 
    .button img {
@@ -734,6 +782,7 @@ form {
       width: 155px;
       height: 212px;
    }
+
    #feed2 {
       width: 155px;
       height: 155px;
@@ -747,11 +796,13 @@ form {
    .home-wrapper p {
       font-size: 3vh;
    }
+
    .feed-row {
       gap: 0px;
       margin-top: 20px;
    }
-   .feed-row img{
+
+   .feed-row img {
       width: 30%;
       height: 30%;
    }
@@ -760,6 +811,7 @@ form {
       font-size: 3.5vh;
       text-align: center;
    }
+
    .feedTitle::after {
       content: " @aroma_bumi!";
       color: var(--accent);
@@ -767,4 +819,16 @@ form {
       display: block;
       font-size: 3.5vh;
    }
+
+   .card-container a:hover {
+      transform: scale(1.1);
+   
+      .card .menu-price, .card .menu-title {
+         transform: translateY(80px);
+      }
+      .card img {
+         transform: scale(1.2) translateY(-40px);
+      }
+   }
+   
 }
