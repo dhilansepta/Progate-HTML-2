@@ -48,6 +48,7 @@
 }
 
 .headerHome {
+   margin-top: 120px;
    font-size: 70px;
    font-weight: 800;
    color: var(--font-light);
@@ -758,6 +759,7 @@ form {
    }
 
    .headerHome {
+      margin-top: 0px;
       font-size: 5.6vh;
    }
 
